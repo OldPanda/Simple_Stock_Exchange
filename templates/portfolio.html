@@ -18,7 +18,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Simple Stock Exchange</a>
+                <a class="navbar-brand" href="/">Simple Stock Exchange</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <form name="lookupForm" class="navbar-form navbar-right">
@@ -32,6 +32,7 @@
         </div>
     </nav>
     <div class="container">
+        <!-- alert messages -->
         {% if err_notice %}
             <div class="alert alert-danger alert-dismissible" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -45,6 +46,7 @@
             </div>
         {% end %}
         <div class="row">
+            <!-- stock info -->
             <div class="col-md-5">
                 {% if stock %}
                     <h3 class="sub-header">{{ stock["name"] }}({{ stock["symbol"] }})</h3>
@@ -77,6 +79,7 @@
                     </form>
                 {% end %}
             </div>
+            <!-- user portfolio -->
             <div class="col-md-7">
                 <div class="col-sm-6">
                     <h3>Current Portfolio</h3>

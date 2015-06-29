@@ -10,6 +10,7 @@ define("port", default=5000, help="run on the given port", type=int)
 
 from handlers import *
 
+
 class Application(tornado.web.Application):
     def __init__(self):
         handlers = [
@@ -23,7 +24,8 @@ class Application(tornado.web.Application):
                 os.path.join(os.path.dirname(__file__), "static"),
             'cookie_secret': 
                 '5iA9R2OTTV+H5YuwjBkFSxgF9Kq+AEWimHQwQ3EDDzg=',
-            'debug': True
+            'debug':
+                True
         }
         tornado.web.Application.__init__(self, handlers, **settings)
 
