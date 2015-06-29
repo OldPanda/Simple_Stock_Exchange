@@ -1,0 +1,37 @@
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+/* buy button */
+#buy-button {
+    margin-left: 20px;
+    width: 70px;
+}
+
+/* sell button */
+#sell-button {
+    margin-right: 20px;
+    width: 70px;
+}
+
+/* table element alignment */
+.table-header {
+    text-align: center;
+    vertical-align: middle;
+}
